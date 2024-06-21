@@ -47,6 +47,8 @@ class LatesteditionsResource extends Resource
             ->columns([
                 Tables\Columns\ImageColumn::make('image')
                     ->circular(),
+                TextColumn::make('titel'),
+                TextColumn::make('description'),
             ])
             ->filters([
                 //
